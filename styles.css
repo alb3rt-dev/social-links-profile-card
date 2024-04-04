@@ -28,7 +28,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-y: scroll;
 }
 
 p {
@@ -89,9 +88,14 @@ p {
 }
 
 @media (max-width: 375px) {
+    body {
+        display: block; /* enables scrolling */
+    }
+    
     .card {
         width: 327px;
         height: 578px;
+        margin: 38px auto;
         padding: 24px;
     }
 }
